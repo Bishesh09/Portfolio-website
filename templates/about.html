@@ -1,0 +1,65 @@
+{% extends 'basic.html' %}
+{% block title %}About{% endblock title %}
+
+{% block stylecss %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+{% endblock stylecss %}
+
+{% block body %}
+{% load static %}
+<!-- ======= About Section ======= -->
+<section id="about" class="about">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>About</h2>
+        <p>Welcome to the exciting world of computer science! <br> As a Pioneer of this field, you are part of a dynamic and rapidly evolving industry that is shaping the way we live, work, and communicate.</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4" data-aos="fade-right">
+          <img src="{% static 'assets/img/bis.jpg' %}" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+          <h3>Web Developer &amp; AI Engineer.</h3>
+          <p class="fst-italic">
+            Hello, and welcome to my portfolio! As a recent graduate with a degree in Computer science and Engineering, I am excited to share with you some of the projects and experiences that have shaped my education and prepared me for my career.Throughout my studies, I have been passionate about Web development and Artificial Intelligence. I have gained experience in Django and OpenCV, and I have had the opportunity to work on a variety of projects that have challenged me and allowed me to grow as a professional.
+          </p>
+          <div class="row">
+            <div class="col-lg-6">
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>10 Sep 1998</span></li>
+                {% comment %} <li><i class="bi bi-chevron-right"></i> <strong>:</strong> <span>www.example.com</span></li> {% endcomment %}
+                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+977 9860134200</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>KATHMANDU, NEPAL</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>24</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>bisheshshah@gmail.com</span></li>
+                
+              </ul>
+            </div>
+          </div>
+          <li><a href="https://link.springer.com/chapter/10.1007/978-981-19-1520-8_43" target="_blank" class="projectlink"></i><span>A Pilot Study on Human Pose Estimation for Sports Analysis</span></a></li>
+
+          <p>
+            In my recent project on pose estimation, I used computer vision techniques to estimate the poses of humans in images and videos. The goal of this project was to develop a machine learning model that could accurately predict the positions and orientations of a person's joints, including their arms, legs, and torso. To do this, I used a combination of deep learning models and classical computer vision algorithms, including OpenCV and TensorFlow. I trained the model on a large dataset of images and videos, using various data augmentation techniques to improve its accuracy and generalization ability. The project was challenging but rewarding, as it required a deep understanding of both computer vision and machine learning. Ultimately, I was able to achieve excellent results, with the model accurately estimating poses even in challenging conditions, such as low light or occluded body parts. This project has given me a deeper appreciation for the power and potential of computer vision, and I look forward to applying these techniques to other exciting problems in the field.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End About Section -->
+
+{% endblock body %}
+
+
+
+
+

@@ -1,2 +1,2 @@
-# Portfolio-website
-Portfolio website using Django 
+# Portfolio
+My portfolio website using Django framework .
